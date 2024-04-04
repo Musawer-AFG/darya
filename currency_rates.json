@@ -1,0 +1,26 @@
+{
+  "card_1": {
+    "currency": "Doller",
+    "symbol": "$",
+    "buy": "123",
+    "sell": "456"
+  },
+  "card_2": {
+    "currency": "EURO",
+    "symbol": "\u20ac",
+    "buy": "79.78",
+    "sell": "78.78"
+  },
+  "card_3": {
+    "currency": "pound",
+    "symbol": "\u00a3",
+    "buy": "91.63",
+    "sell": "92.63"
+  },
+  "card_4": {
+    "currency": "rupee",
+    "symbol": "\u20b9",
+    "buy": "895.04",
+    "sell": "900"
+  }
+}
