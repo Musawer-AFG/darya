@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+<!--  {{url_for('static', filename='')}}-->
+  <link href="{{url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{{url_for('home')}}">Home</a></li>
+          <li>Admin</li>
+        </ol>
+        <h2>Admin</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Rates</span>
+          <h2>Change Rates</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+            <div style="text-align:left" class="box">
+             <form action="card_1" method="post">
+               <h3 style="text-align:center">First Card</h3>
+              <div class="mb-3">
+                <label for="currency" class="form-label">Currency</label>
+                <input type="text" name="currency" class="form-control" id="currency">
+              </div>
+                <div class="mb-3">
+                  <label for="symbol" class="form-label">Symbol</label>
+                  <input type="text" name="symbol" class="form-control" id="symbol">
+                </div>
+                <div class="mb-3">
+                  <label for="Buy" class="form-label">Buy</label>
+                  <input type="text" name="buy" class="form-control" id="Buy">
+                </div>
+                <div class="mb-3">
+                  <label for="Sell" class="form-label">Sell</label>
+                  <input type="text" name="sell" class="form-control" id="Sell">
+                </div>
+                <div class="btn-wrap">
+                  <button class="btn-buy" type="submit" >Set Rate</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+            <div class="box featured" style="text-align:left">
+              <h3 style="text-align:center">Second Card</h3>
+              <form action="card_2" method="post">
+                <div class="mb-3">
+                  <label for="currency" class="form-label">Currency</label>
+                  <input type="text" name="currency" class="form-control" >
+                </div>
+                <div class="mb-3">
+                  <label for="symbol" class="form-label">Symbol</label>
+                  <input type="text" name="symbol" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="Buy" class="form-label">Buy</label>
+                  <input type="text" name="buy" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="Sell" class="form-label">Sell</label>
+                  <input type="text" name="sell" class="form-control">
+                </div>
+                <div class="btn-wrap">
+                  <button type="submit" class="btn-buy" >Set Rate</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box featured" style="text-align:left">
+              <form action="card_3" method="post">
+              <div class="mb-3">
+                <h3 style="text-align:center">Third Card</h3>
+                <label for="currency" class="form-label">Currency</label>
+                <input type="text" name="currency" class="form-control" >
+              </div>
+              <div class="mb-3">
+                <label for="symbol" class="form-label">Symbol</label>
+                <input type="text" name="symbol" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="Buy" class="form-label">Buy</label>
+                <input type="text" name="buy" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="Sell" class="form-label">Sell</label>
+                <input type="text" name="sell" class="form-control">
+              </div>
+               <div class="btn-wrap">
+                 <button type="submit" class="btn-buy">Set Rate</button>
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box" style="text-align:left">
+              <form action="card_4" method="post" >
+                <div class="mb-3">
+                  <h3 style="text-align:center">Fourth Card</h3>
+                  <label for="currency" class="form-label">Currency</label>
+                  <input type="text" name="currency" class="form-control" >
+                </div>
+                <div class="mb-3">
+                  <label for="symbol" class="form-label">Symbol</label>
+                  <input type="text" name="symbol" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="Buy" class="form-label">Buy</label>
+                  <input type="text" name="buy" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="Sell" class="form-label">Sell</label>
+                  <input type="text" name="sell" class="form-control">
+                </div>
+                <div class="btn-wrap">
+                  <button type="submit" class="btn-buy" >Set Rate</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:60px" class="section-title">
+          <span>Set Images</span>
+          <h2>Set Images</h2>
+        </div>
+
+<!--images section-->
+         <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+            <div style="text-align:left" class="box">
+             <form action="upload_card_1_image" method="post" enctype="multipart/form-data">
+               <h3 style="text-align:center">First Card</h3>
+               <input type="file" name="image-card-1">
+                <div class="btn-wrap">
+                  <button class="btn-buy" type="submit" >Upload</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+            <div class="box featured" style="text-align:left">
+             <form action="upload_card_2_image" method="post" enctype="multipart/form-data">
+               <h3 style="text-align:center">Second Card</h3>
+               <input type="file" name="image-card-2">
+                <div class="btn-wrap">
+                  <button class="btn-buy" type="submit" >Upload</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box featured" style="text-align:left">
+             <form action="upload_card_3_image" method="post" enctype="multipart/form-data">
+               <h3 style="text-align:center">Third Card</h3>
+               <input type="file" name="image-card-3">
+                <div class="btn-wrap">
+                  <button class="btn-buy" type="submit" >Upload</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box" style="text-align:left">
+             <form action="upload_card_4_image" method="post" enctype="multipart/form-data">
+               <h3 style="text-align:center">FOURTH Card</h3>
+               <input type="file" name="image-card-4">
+                <div class="btn-wrap">
+                  <button class="btn-buy" type="submit" >Upload</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+        </div>
+
+        <div style="margin-top:60px" class="section-title">
+          <span>Set Email</span>
+          <h2>Set Email</h2>
+        </div>
+
+        <div class="row" >
+          <div class="col-lg col-md" data-aos="zoom-in" data-aos-delay="150">
+            <div style="text-align:left" class="box">
+            <form method="post"  action="email">
+                <div class="mb-3">
+                  <label for="Buy" class="form-label">Email</label>
+                  <input type="text" name="sender_email" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="Sell" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="Sell" class="form-label">Receiver Email</label>
+                  <input type="text" name="receiver_email" class="form-control">
+                </div>
+                <div class="btn-wrap">
+                  <button type="submit" class="btn-buy" >Submit</button>
+                </div>
+            </form>
+            </div>
+
+          <div>
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+      </div>
+    </section>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Screen-rates</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+<!--  {{url_for('static', filename='')}}-->
+  <link href="{{url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="inner-page"  style="
+    padding-bottom: 10px;
+">
+      <div class="container">
+            <!-- ======= Pricing Section ======= -->
+    <section id="rates" style="padding: 1px" class="pricing-screen">
+      <div class="container">
+
+              <div class="center-image" >
+                <img class="img-fluid" src="{{url_for('static', filename='assets/img/logo.png')}}">
+              </div>
+
+        <div class="section-title" style="margin-top: 60px;">
+          <span>Rates</span>
+          <h2>Rates</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12 " data-aos="zoom-in" data-aos-delay="150">
+            <div class="box featured" style="box-shadow: rgba(50, 50, 93, 0.6) 0px 150px 150px 150px inset ;background: url('../static/assets/img/image-card-1.jpg'); background-position: fixed center center; background-size: cover; background-repeat: no-repeat;">
+              <h3>{{rates['card_1']['currency']}}</h3>
+              <h4><sup>{{rates['card_1']['symbol']}}</sup>{{rates['card_1']['buy']}}<span style="color: #fff" > / Buy</span></h4>
+              <h4><sup>{{rates['card_1']['symbol']}}</sup>{{rates['card_1']['sell']}}<span style="color: #fff" > / Sell</span></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-4 mt-md-0" data-aos="zoom-in">
+            <div class="box featured" style="box-shadow: rgba(50, 50, 93, 0.6) 0px 150px 150px 150px inset; background: url('../static/assets/img/image-card-2.jpg'); background-position: fixed center center; background-size: cover; background-repeat: no-repeat;">
+              <h3>{{rates['card_2']['currency']}}</h3>
+              <h4><sup>{{rates['card_2']['symbol']}}</sup>{{rates['card_2']['buy']}}<span style="color: #fff" > / Buy</span></h4>
+              <h4><sup>{{rates['card_2']['symbol']}}</sup>{{rates['card_2']['sell']}}<span style="color: #fff" > / Sell</span></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box featured" style="box-shadow: rgba(50, 50, 93, 0.6) 0px 150px 150px 150px inset; background: url('../static/assets/img/image-card-3.jpg'); background-position: fixed center center; background-size: cover; background-repeat: no-repeat; opacity:0.76">
+              <div class="background-with-shadow" >
+                <h3>{{rates['card_3']['currency']}}</h3>
+                <h4><sup>{{rates['card_3']['symbol']}}</sup>{{rates['card_3']['buy']}}<span style="color: #fff" > / Buy</span></h4>
+                <h4><sup>{{rates['card_3']['symbol']}}</sup>{{rates['card_3']['sell']}}<span style="color: #fff"> / Sell</span></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box featured" style="box-shadow: rgba(50, 50, 93, 0.6) 0px 150px 150px 150px inset; background: url('../static/assets/img/image-card-4.jpg'); background-position: fixed center center; background-size: cover; background-repeat: no-repeat;">
+              <h3>{{rates['card_4']['currency']}}</h3>
+              <h4><sup>{{rates['card_4']['symbol']}}</sup>{{rates['card_4']['buy']}}<span style="color: #fff" > / Buy</span></h4>
+              <h4><sup>{{rates['card_4']['symbol']}}</sup>{{rates['card_4']['sell']}}<span style="color: #fff" > / Sell</span></h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    </section>
+
+
+
+      <section id="contact" style="padding-top: 20px" class="contact">
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+
+          <div class="col-lg-12">
+            <div class="info-box mb-4" style="background-color: #f9f9f9; padding: 30px; box-shadow:none; border-radius: 10px">
+              <i class="bx bx-map" style="font-size: 50px"></i>
+              <h3 style="font-size: 25px" >آدرس ‍</h3>
+              <p style="font-size: 25px; color: #7B9FB7" > گلبهار سنتر, منزل تحتانی, مقابل رستورانت چیف برگر, دکان نمبر <span style="color: #777777" >۱۹۳  </span>الی<span style="color: #777777" >۲۰۰</span></p>
+            </div>
+          </div>
+
+<section/>
+
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+
+</body>
+
+</html>
+
